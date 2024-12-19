@@ -14,7 +14,6 @@ app.use(cookieParser());
 app.use(express.json());
 
 app.use('/api/user', userRouter);
-app.use(express.urlencoded({extended: true}));
 
 app.post('/', verifyJWT ,(req, res) => {
 
